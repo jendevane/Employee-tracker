@@ -5,12 +5,12 @@ USE emptr;
 
 CREATE TABLE department (
     id INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    name VARCHAR(30)
+    namee VARCHAR(30)
 );
-CREATE TABLE role (
+CREATE TABLE rolee (
   id INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY,
   title VARCHAR(30),
-  salary DECIMAL,
+  salary DECIMAL (10,2) NOT NULL,
   department_id INTEGER,
   FOREIGN KEY (department_id) REFERENCES department(id)
 );
@@ -20,7 +20,7 @@ CREATE TABLE employee (
     last_name VARCHAR (30),
     rolee_id INTEGER,
     manager_id INTEGER,
-    FOREIGN KEY (role_id) REFERENCES role(id),
-    FOREIGN KEY (manager_id) REFERENCES role(id)
+    FOREIGN KEY (rolee_id) REFERENCES rolee(id),
+    FOREIGN KEY (manager_id) REFERENCES rolee(id)
 
 )

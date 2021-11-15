@@ -1,5 +1,5 @@
 USE emptr;
-INSERT INTO department (name)
+INSERT INTO department (namee)
 VALUES 
 ('Sales'),
 ('HR'),
@@ -21,7 +21,7 @@ VALUES
 ('Account Manager', 60000, 4),
 ('Accountant', 60000,4);
 
-INSERT INTO employee (first_name,last_name,role_id,manager_id)
+INSERT INTO employee (first_name,last_name,rolee_id,manager_id)
 VALUES
 ('Jennifer', 'Devane', 1, NULL ),
 ('Jessica', 'Devane', 2, 1),
